@@ -12,12 +12,6 @@ target 'partner' do
     :hermes_enabled => false
   )
 
-  pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
-  
-  # QR code
-  permissions_path = '../node_modules/react-native-permissions/ios'
-  pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
-
   target 'partnerTests' do
     inherit! :complete
     # Pods for testing
